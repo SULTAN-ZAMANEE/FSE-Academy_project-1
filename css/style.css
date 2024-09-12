@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: tahoma, Arial, sans-serif;
+}
+body{
+    background-color:#EAE4DD;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    padding: 0 100px;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 100%;
+    font-size: 22px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    float: right;
+    height: 100%;
+    width: 550px;
+    
+}
+.header .navbar ul{
+    list-style: none;
+    /* overflow: auto; */
+    height: 100%;
+    width: 550px;
+    padding: 10px 0;
+}
+.header .navbar ul li{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+.header .navbar ul li.pos span{
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 40px;
+    right: 0;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    font-size: 18px;
+    visibility: hidden;
+    background-color: #44f;
+}
+.header .navbar ul li.pos:hover span{
+    visibility: visible;
+}
+.header .navbar ul li a{
+    font-size: 16px;
+    margin: 15px 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.header .navbar ul li a:hover{
+    border-bottom: 4px solid blue;
+    padding-bottom: 10px;
+    transition: 1s;
+}
+.header .navbar ul li:first-child{
+    border-bottom: 4px solid blue;
+    padding-bottom: 10px;
+}
+.slideshow{
+    width: 100%;
+    height: 100vh;
+    background: url('../Image/IMG2.jpg') no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+.slideshowContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(000, 000, 000 ,0.6);
+    padding-top: 300px;
+}
+.slideshowContent h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.slideshowContent p{
+    height: 70px;
+    width: 800px;
+    margin: auto;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.slideshowContent button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.slideshowContent button:hover{
+    background-color: #fd7520;
+}
+/* =============================== Start Section 2 Style =============================== */
+.section-2{
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    padding-top: 70px;
+    color: black;
+}
+.section-2 *{
+    color: black;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.section-2 .box{
+    position: relative;
+    width: 30%;
+    height: 250px;
+    float: left;
+    margin-top: -25px;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    font-size: 40px;
+    overflow: hidden;
+    border: 1px solid #333;
+    background-color: #c7c7c7;
+}
+.section-2 .box:after{
+    position: absolute;
+    content: "";
+    background-color: #ff8a41;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.section-2 .box:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 600ms;
+}
+.section-2 .box::before{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+}
+.section-2 .box:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 600ms;
+}
+.section-2 hr{
+    margin: 20px auto;
+}
+.fa{
+    font-size: 40px;
+    margin: 10px 0;
+}
+.footer-icon .bag-fa{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: #add8e6;
+}
+/* =============================== End Section 2 Style =============================== */
+
+/* =============================== Start Section 3 Style =============================== */
+.section-3{
+    width: 100%;
+    height: 100vh;
+    color: #333;
+}
+.box-3{
+    width: 30%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    float: left;
+    margin: 15px 0; 
+    position: relative;      
+}
+.box-3 .over-lay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #ff8a41a2;
+    text-align: center;
+    display: none;
+}
+.over-lay div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50% ,-50%);
+    width: 70%;
+}
+.over-lay div i{
+    font-size: 25px;
+    background-color: #add8e6;
+    padding: 10px;
+}
+.over-lay div p{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.box-3:hover .over-lay{
+    display: block;
+}
+/* =============================== End Section 3 Style =============================== */
+
+/* =============================== Start Section 4 Style =============================== */
+.section-4{
+    width: 100%;
+    height: 100vh;
+}
+.section-4 *{
+    color: #000;
+}
+.box-4{
+    width: 30%;
+    height: 180px;
+    float: left;
+    border: 1px solid #444;
+    margin: 15px 0;
+    position: relative;
+    background-color: #c7c7c7;
+}
+.box-4-icon{
+    width: 23%;
+    height: 100%;
+    float: left;
+    padding: 15px;
+}
+.discr-text h2{
+    margin: 25px 0;
+    font-size: 28px;
+}
+.section-4 .wrapper .box-4:after{
+    position: absolute;
+    content: "";
+    background-color: #ff8a41;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.section-4 .wrapper .box-4:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 500ms;
+}
+/* =============================== End Section 4 Style =============================== */
+/* =============================== Start Section 5 Style =============================== */
+.section-5{
+    width: 100%;
+    height: 80vh;
+}
+.section-5 *{
+    color: #000;
+    list-style: none;
+}
+.description{
+    width: 50%;
+    float: left;
+    margin-top: 60px;
+    height: 60vh;
+}
+.description >*{
+    margin: 20px;
+}
+.description h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.hrhr{
+    width: 90px;
+    height: 4px;
+    border: none;
+    margin-top: -13px;
+    background-color: #000;
+}
+.description-image{
+    width: 35%;
+    height: 55vh;
+    float: right;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 90px;
+    margin-top: 60px;
+}
+/* =============================== End Section 5 Style =============================== */
+/* =============================== Start Section 6 Style =============================== */
+.section-6{
+    width: 100%;
+    height: 40vh;
+    background: url('../Image/eee.jpeg') no-repeat fixed;
+    background-size: cover;
+}
+.section-6 .wrapper{
+    position: relative;
+}
+.section-6 .wrapper .contanier{
+    height: 200px;
+    width: 82%;
+    padding: 5% 70px;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section-6 .wrapper .contanier .icons{
+    float: left;
+    margin: 0 40px;
+    text-align: center;
+    font-size: 20px;
+}
+/* =============================== End Section 6 Style =============================== */
+/* =============================== Start Section 7 Style =============================== */
+.section-7{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+.section-7 .box-7{
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    float: left;
+    position: relative;
+    padding: 30px;
+    margin-top: 15px;
+    border: 1px solid #ff8a41;
+    border-radius: 15px;
+    background-color: #c7c7c7;
+    overflow: hidden;
+}
+.section-7 .box-7 > *{
+    margin: 20px auto;
+    color: #000;
+    font-size: 20px;
+}
+.section-7 .box-7 .circle{
+    width: 110px;
+    height: 110px;
+    border: 1px solid #ff8a41;
+    border-radius: 50%;
+    padding: 20px;
+    color: #000;
+}
+.box-7 *{
+    color: #000;
+    line-height: 25px;
+}
+.circle span{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.circle h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.purch{
+    width: 50%;
+    padding: 5px 0;
+    border: 1px solid #ff8a41;
+}
+.overlay-7:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #ff8a41;
+    opacity: 0.9;
+}
+.box-7:hover .overlay-7::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+.box-7:hover .circle{
+    border: 1px solid #000;
+}
+.box-7:hover span,.box-7:hover .circle * {
+    color: #ff8a41;
+}
+/* =============================== End Section 7 Style =============================== */
+/* =============================== Start Section 8 Style =============================== */
+.section-8{
+    width: 100%;
+    height: 40vh;
+    padding: 40px 0;
+    background: url('../Image/th.jfif') no-repeat fixed;
+    background-size: cover;
+}
+.section-8 .wrapper .box-8{
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin-left: 5%;
+}
+.profile{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+.IMG{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.name{
+    width: 60%;
+    height: 100%;
+    margin-left: 20px;
+    padding-top: 15px;
+    float: left;
+}
+.box-8 p{
+    margin-left: 30px;
+}
+/* =============================== End Section 8 Style =============================== */
+/* =============================== Start Section 9 Style =============================== */
+.section-9{
+    width: 100%;
+    height: 85vh;
+    padding-top: 40px;
+}
+.section-9 .wrapper .box-9{
+    position: relative;
+    width: 30%;
+    height: 350px;
+    float: left;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #bbc;
+}
+.image-9{
+    position: relative;
+    height: 80%;
+}
+.overlay-9{
+    width: 100%;
+    height: 100%;
+    background-color: #000000b0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.section-9 .wrapper .box-9 .overlay-9 a{
+    width: 12%;
+    text-align: center;
+    text-decoration: none;
+}
+.section-9 .wrapper .box-9 .overlay-9 a i{
+    margin: 0 0;
+    display: block;
+    width: 12%;
+    margin-left: auto;
+    background-color: #add8e6;
+}
+.section-9 .box-9:hover .overlay-9 {
+    visibility: visible;
+}
+.section-9 .wrapper .box-9 .OV-9:after{
+    content: "";
+    position: absolute;
+    background-color: #ff8a41;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .9;
+}
+.section-9 .wrapper .box-9:hover .OV-9:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+
+}
+.section-9 .wrapper .box-9:hover .title-9 h2{
+    color: #fff;
+}
+.section-9 .wrapper .box-9:hover .title-9 span{
+    color: orangered;
+}
+.title-9{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+.title-9 *{
+    color: #000;
+}
+/* =============================== End Section 9 Style =============================== */
+/* =============================== Start Section 10 Style =============================== */
+.section-10{
+    width: 100%;
+    height: 95vh;
+    padding-top: 10px;
+}
+.box-10{
+    width: 30%;
+    height: 70vh;
+    float: left;
+    margin-top: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: #a3a3a3;
+}
+.box-10 *{
+    color: #000;
+}
+.IMG-10{
+    width: 100%;
+    height: 45%;
+    background: url(../Image/IMG6.jpg) no-repeat;
+    background-size: 100%;
+    box-shadow: 1px 1px 100px 20px #ff8a41 inset;
+}
+.blog-list{
+    width: 100%;
+    height: 40px;
+    padding: 6px;
+    margin: 20px 0;
+}
+.blog-list span{
+    width: 33%;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.blog-title{
+    font-size: 28px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.blog-des *{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px auto;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.box-10:after{
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #000;
+    position: absolute;
+}
+.box-10:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+/* =============================== End Section 10 Style =============================== */
+/* =============================== Start footer Style =============================== */
+.footer{
+    width: 100vw;
+    height: 350px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #a3a3a3;
+}
+.footer-image{
+    width: 250px;
+    margin: auto;
+}
+.footer-icon{
+    width: 450px;
+    margin: 20px auto;
+}
+.footer-icon *{
+    font-size: 65px;
+    margin: 2px;
+    overflow: hidden;
+}
+.container p{
+    text-transform: uppercase;
+}
+/* =============================== End footer Style =============================== */
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+.section-title{
+    width: 100%;
+    height: 150px;
+    padding-top: 20px;
+    text-align: center;
+}
+.section-title h2{
+    font-size: 32px;
+    color: black;
+    text-transform: capitalize;
+}
+.section-title hr{
+    width: 80px;
+    height: 5px;
+    margin: 10px auto;
+    border: none;
+}
+.marge{
+    margin: 15px 5%;
+}
+.colo-oran{
+    color: #ff8a41;
+}
+.bag-oran{
+    background-color: #ff8a41;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.upppercase{
+    text-transform: uppercase;
+}
+
+
